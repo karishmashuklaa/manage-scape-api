@@ -4,7 +4,6 @@
         "title": "Learn Javascript",
         "description": "JavaScript is the crown jewel when it comes to programming language popularity​. Learn it to master rich web development.",
         "link": "",
-        "image": "xyz",
         "priority": 3,
         "timeToFinish": 120,
         "active": true,
@@ -16,7 +15,6 @@
         "title": "Learn English",
         "description": "English is the most used and spoken language around the world.English is the language used in business, science, and technology. Learning English will increase your chances to get a job, participate in discussions, and improve your networking skills.",
         "link": "",
-        "image": "xyz",
         "priority": 3,
         "timeToFinish": 120,
         "active": true,
@@ -24,11 +22,10 @@
         "status": "inactive"
     },
     {
-        "id": "2",
+        "id": "3",
         "title": "Introduction to Figma",
         "description": "Figma is one of the best design tools available right now. The tool itself is incredibly intuitive.",
         "link": "",
-        "image": "xyz",
         "priority": 3,
         "timeToFinish": 120,
         "active": true,
