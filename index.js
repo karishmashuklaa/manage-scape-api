@@ -21,8 +21,22 @@ app.get('/api/resources', (req, res) => {
 
 app.post('/api/resources' , (req,res) => {
     const resources = getResources()
-    console.log(req.body)
-    res.send('Your response has been recieved successfully')
+    const resource = req.body 
+    
+    resource.createdAt = new Date()
+    resource.status = 'inactive'
+    resource.id = Date.now().toString()
+
+    resources.unshift(resource)
+
+    // writing in JSON file
+
+    fs.writeFile(pathToFile, JSON.stringify(resources, null, 2), error => {
+        if(error) {
+            return res.status(400).send('Failed to save data in file')
+        }
+        return res.send('Successfully saved data to file')
+    })
 })
 
 app.listen(PORT, () => {
