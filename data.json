@@ -1,42 +1,32 @@
 [
   {
+    "title": "Introduction to Figma",
+    "description": "Figma is one of the best design tools available right now. It is a UI and UX design application that you can use it to create websites, apps, or smaller user interface components that can be integrated into other projects",
+    "link": "https://www.udemy.com/",
+    "priority": "3",
+    "timeToFinish": "100",
+    "createdAt": "2021-06-08T20:49:35.920Z",
+    "status": "inactive",
+    "id": "1623185375920"
+  },
+  {
+    "title": "Learn Javascript",
+    "description": "JavaScript is the crown jewel when it comes to programming language popularity​. Learn it to master rich web development",
+    "link": "https://www.udemy.com/",
+    "priority": 1,
+    "timeToFinish": "120",
+    "createdAt": "2021-06-08T20:47:38.478Z",
+    "status": "inactive",
+    "id": "1623185258478"
+  },
+  {
     "title": "Learn Android Development ",
-    "description": "To make cool android applications ",
+    "description": "It is a good time to learn Android development as there is a huge market of Android deviceswith increasing demand for mobile apps. ",
     "link": "https://www.udemy.com/",
     "priority": "2",
     "timeToFinish": "300",
     "createdAt": "2021-06-08T18:14:37.182Z",
     "status": "inactive",
     "id": "1623176077182"
-  },
-  {
-    "id": "1",
-    "title": "Learn Javascript",
-    "description": "JavaScript is the crown jewel when it comes to programming language popularity​. Learn it to master rich web development.",
-    "link": "",
-    "priority": 3,
-    "timeToFinish": 120,
-    "createdAt": 12,
-    "status": "active"
-  },
-  {
-    "id": "2",
-    "title": "Learn English",
-    "description": "English is the most used and spoken language around the world.English is the language used in business, science, and technology. Learning English will increase your chances to get a job, participate in discussions, and improve your networking skills.",
-    "link": "",
-    "priority": 3,
-    "timeToFinish": 120,
-    "createdAt": 12,
-    "status": "inactive"
-  },
-  {
-    "id": "3",
-    "title": "Introduction to Figma",
-    "description": "Figma is one of the best design tools available right now. The tool itself is incredibly intuitive.",
-    "link": "",
-    "priority": 3,
-    "timeToFinish": 120,
-    "createdAt": 12,
-    "status": "inactive"
   }
 ]
