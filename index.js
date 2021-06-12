@@ -11,7 +11,7 @@ const getResources = () => JSON.parse(fs.readFileSync(pathToFile))
 app.use(express.json()) // to console.log the req.body
 
 app.get('/', (req,res) => {
-    res.send('Hello world')
+    res.send('API Manage Scape')
 })
 
 app.get('/api/resources', (req, res) => {
@@ -19,7 +19,7 @@ app.get('/api/resources', (req, res) => {
     res.send(resources)
   })
 
-//   Get resources by ID
+// Get resources by ID
 app.get('/api/resources/:id', (req, res) => {
     const resources = getResources()
     const { id } = req.params // destructuring from req.params.id
@@ -27,7 +27,7 @@ app.get('/api/resources/:id', (req, res) => {
     res.send(resource)
 })
 
-
+// Creating resources
 app.post('/api/resources' , (req,res) => {
     const resources = getResources()
     const resource = req.body 
@@ -39,12 +39,28 @@ app.post('/api/resources' , (req,res) => {
     resources.unshift(resource)
 
     // writing in JSON file
-
     fs.writeFile(pathToFile, JSON.stringify(resources, null, 2), error => {
         if(error) {
-            return res.status(400).send('Failed to save data in file')
+            return res.status(400).send('Failed to save data')
         }
-        return res.send('Successfully saved data to file')
+        return res.send('Successfully saved data')
+    })
+})
+
+// Updating resources
+app.patch('/api/resources/:id', (req, res) => {
+    const resources = getResources()
+    const { id } = req.params // destructuring from req.params.id
+    const index = resources.findIndex((resource) => resource.id === id)
+    
+    resources[index] = req.body // updating the resource
+
+    // updating in JSON file
+    fs.writeFile(pathToFile, JSON.stringify(resources, null, 2), error => {
+        if(error) {
+            return res.status(400).send('Failed to update data')
+        }
+        return res.send('Successfully updated data')
     })
 })
 
