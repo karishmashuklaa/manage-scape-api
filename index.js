@@ -8,12 +8,14 @@ const pathToFile = path.resolve('./data.json')
 
 const getResources = () => JSON.parse(fs.readFileSync(pathToFile))
 
-app.use(express.json()) // to console.log the req.body
+// to console.log the req.body
+app.use(express.json()) 
 
 app.get('/', (req,res) => {
     res.send('API Manage Scape')
 })
 
+// Get all resources
 app.get('/api/resources', (req, res) => {
     const resources = getResources()
     res.send(resources)
@@ -26,6 +28,13 @@ app.get('/api/resources/:id', (req, res) => {
     const resource = resources.find((resource) => resource.id === id)
     res.send(resource)
 })
+
+// Get active resource
+app.get('/api/activeresource', (req, res) => {
+    const resources = getResources()
+    const activeResource = resources.find(resource => resource.status === "active")
+    res.send(activeResource)
+  })
 
 // Creating resources
 app.post('/api/resources' , (req,res) => {
@@ -47,12 +56,12 @@ app.post('/api/resources' , (req,res) => {
     })
 })
 
-// Updating resources and activating resource 
+// Updating resources and activating resources
 app.patch('/api/resources/:id', (req, res) => {
     const resources = getResources()
     const { id } = req.params // destructuring from req.params.id
     const index = resources.findIndex((resource) => resource.id === id)
-    const activeResource = resources.find((resource => resource.status === "active"))
+    const activeResource = resources.find(resource => resource.status === "active")
     
     resources[index] = req.body // updating the resource
 

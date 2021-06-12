@@ -6,20 +6,19 @@
     "priority": "4",
     "timeToFinish": "90",
     "createdAt": "2021-06-08T21:13:51.778Z",
-    "status": "inactive",
+    "status": "active",
     "id": "1623186831778",
-    "activationTime": "2021-06-12T14:53:47.747Z"
+    "activationTime": "2021-06-12T20:52:28.633Z"
   },
   {
     "title": "Introduction to Figma",
-    "description": "Figma is one of the best design tools available right now. It is a UI and UX design application that you can use it to create websites, apps, or smaller user interface components that can be integrated into other projects",
+    "description": "Figma is one of the best design tools available right now. It is a UI and UX design application that you can use it to create websites, apps, or smaller user interface components that can be integrated into other projects.",
     "link": "https://www.udemy.com/",
     "priority": "3",
     "timeToFinish": "100",
     "createdAt": "2021-06-08T20:49:35.920Z",
-    "status": "active",
-    "id": "1623185375920",
-    "activationTime": "2021-06-12T14:57:19.717Z"
+    "status": "inactive",
+    "id": "1623185375920"
   },
   {
     "title": "Learn Javascript",
