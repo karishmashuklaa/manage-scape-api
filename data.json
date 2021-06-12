@@ -1,13 +1,14 @@
 [
   {
     "title": "Learn English ",
-    "description": "English language plays an essential role in our lives as it helps in communication. It is the main language for studying any subject all over the world.",
+    "description": "English language plays an essential role in our lives as it helps in communication. It is the main language for studying any subject all over the world. ",
     "link": "https://www.udemy.com/",
     "priority": "4",
     "timeToFinish": "90",
     "createdAt": "2021-06-08T21:13:51.778Z",
     "status": "inactive",
-    "id": "1623186831778"
+    "id": "1623186831778",
+    "activationTime": "2021-06-12T14:53:47.747Z"
   },
   {
     "title": "Introduction to Figma",
@@ -16,8 +17,9 @@
     "priority": "3",
     "timeToFinish": "100",
     "createdAt": "2021-06-08T20:49:35.920Z",
-    "status": "inactive",
-    "id": "1623185375920"
+    "status": "active",
+    "id": "1623185375920",
+    "activationTime": "2021-06-12T14:57:19.717Z"
   },
   {
     "title": "Learn Javascript",
@@ -31,7 +33,7 @@
   },
   {
     "title": "Learn Android Development ",
-    "description": "It is a good time to learn Android development as there is a huge market of Android deviceswith increasing demand for mobile apps. ",
+    "description": "It is a good time to learn Android development as there is a huge market of Android devices with increasing demand for mobile apps. ",
     "link": "https://www.udemy.com/",
     "priority": "2",
     "timeToFinish": "300",

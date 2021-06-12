@@ -47,13 +47,23 @@ app.post('/api/resources' , (req,res) => {
     })
 })
 
-// Updating resources
+// Updating resources and activating resource 
 app.patch('/api/resources/:id', (req, res) => {
     const resources = getResources()
     const { id } = req.params // destructuring from req.params.id
     const index = resources.findIndex((resource) => resource.id === id)
+    const activeResource = resources.find((resource => resource.status === "active"))
     
     resources[index] = req.body // updating the resource
+
+    // activate resource functionality
+    if(req.body.status === "active"){
+        if(activeResource){
+            return res.status(400).send("Another resource is already active")
+        }
+        resources[index].status = "active" // activate the resource
+        resources[index].activationTime = new Date()
+    }
 
     // updating in JSON file
     fs.writeFile(pathToFile, JSON.stringify(resources, null, 2), error => {
