@@ -4,28 +4,28 @@
     "description": "English language plays an essential role in our lives as it helps in communication. It is the main language for studying any subject all over the world. ",
     "link": "https://www.udemy.com/",
     "priority": "4",
-    "timeToFinish": "90",
+    "timeToFinish": 50,
     "createdAt": "2021-06-08T21:13:51.778Z",
-    "status": "active",
-    "id": "1623186831778",
-    "activationTime": "2021-06-12T20:52:28.633Z"
+    "status": "inactive",
+    "id": "1623186831778"
   },
   {
     "title": "Introduction to Figma",
     "description": "Figma is one of the best design tools available right now. It is a UI and UX design application that you can use it to create websites, apps, or smaller user interface components that can be integrated into other projects.",
     "link": "https://www.udemy.com/",
     "priority": "3",
-    "timeToFinish": "100",
+    "timeToFinish": 1,
     "createdAt": "2021-06-08T20:49:35.920Z",
-    "status": "inactive",
-    "id": "1623185375920"
+    "status": "complete",
+    "id": "1623185375920",
+    "activationTime": "2021-06-13T14:09:16.075Z"
   },
   {
     "title": "Learn Javascript",
     "description": "JavaScript is the crown jewel when it comes to programming language popularity​. Learn it to master rich web development",
     "link": "https://www.udemy.com/",
     "priority": 1,
-    "timeToFinish": "120",
+    "timeToFinish": 120,
     "createdAt": "2021-06-08T20:47:38.478Z",
     "status": "inactive",
     "id": "1623185258478"
@@ -35,7 +35,7 @@
     "description": "It is a good time to learn Android development as there is a huge market of Android devices with increasing demand for mobile apps. ",
     "link": "https://www.udemy.com/",
     "priority": "2",
-    "timeToFinish": "300",
+    "timeToFinish": 300,
     "createdAt": "2021-06-08T18:14:37.182Z",
     "status": "inactive",
     "id": "1623176077182"

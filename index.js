@@ -63,7 +63,12 @@ app.patch('/api/resources/:id', (req, res) => {
     const index = resources.findIndex((resource) => resource.id === id)
     const activeResource = resources.find(resource => resource.status === "active")
     
+    if (resources[index].status === "complete") {
+        return res.status(420).send("Failed to update. Resource has already been completed.");
+    }
+
     resources[index] = req.body // updating the resource
+    
 
     // activate resource functionality
     if(req.body.status === "active"){
